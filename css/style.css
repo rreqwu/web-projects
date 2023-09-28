@@ -1,0 +1,59 @@
+:root{
+    font-family: Roboto,sans-serif;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 62.5%;
+  
+
+
+}
+p{
+    color: #85859B;
+    font-size:1.6rem;
+    
+
+}
+a{
+    color: #7875FE;
+    font-size:2rem;
+
+}
+.zag1 {
+    color: #4C5866;
+    
+    font-size:3rem;
+    font-weight: 400;
+    line-height: 30px;  
+   
+}
+.zag2
+{
+    color: #666666;
+    font-size:2.4rem;
+ 
+    font-weight: 400;
+    line-height: 24px;
+    
+}
+.lil
+{
+    color: #B5B5BD;
+    font-size:1.4rem;    
+   
+}
+.back
+{
+   
+    background-color:#C4C4C4;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+
+}
+.vst
+{
+    color: #666666;
+    font-size:1.6rem;
+    font-weight: 500;
+}
