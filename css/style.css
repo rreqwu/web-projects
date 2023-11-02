@@ -1,28 +1,27 @@
 :root{
+    --text-color: #85859B; 
+    --text-lil-color:#B5B5BD;
     font-family: Roboto,sans-serif;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    margin:1.1rem  1.5rem 0 1.5rem;
     font-weight: 400;
     word-wrap: break-word;
     font-size: 62.5%;
-  
+    --main-background-color: "#FFFFFF";
+    --dark-blue:#4C5866;
+    --violet:#7875FE;
+    --grey:#C4C4C4;
+    --true-grey:#666666;
 
 
 }
 p{
-    color: #85859B;
+    color: var(--text-color);
     font-size:1.6rem;
     
 
 }
-a{
-    color: #7875FE;
-    font-size:2rem;
-
-}
 .zag1 {
-    color: #4C5866;
-    
+    color:var(--dark-blue);
     font-size:3rem;
     font-weight: 400;
     line-height: 3rem;  
@@ -30,7 +29,7 @@ a{
 }
 .zag2
 {
-    color: #666666;
+    color: var(--true-grey);
     font-size:2.4rem;
  
     font-weight: 400;
@@ -39,27 +38,27 @@ a{
 }
 .lil
 {
-    color: #B5B5BD;
+    color: var(--text-lil-color);
     font-size:1.4rem;    
    
 }
 .back
 {
    
-    background-color:#C4C4C4;
+    background-color:var(--grey);
     padding-top: 0rem;
     padding-bottom: 0rem;
 
 }
 .vst
 {
-    color: #666666;
+    color: var(--true-grey);
     font-size:1.6rem;
     font-weight: 500;
 }
 .end
 {
-    color: #4C5866;
+    color: var(--dark-blue);
     font-size:1.3rem;
     text-align:center;
 
@@ -68,23 +67,22 @@ a{
 .back1
 {
    
-    background-color:#4C5866;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    background-color:var(--dark-blue);
+    margin:0 0 0 0;
 
 
 }
 .butbord
 {
-    color: #7875FE;
+    color:var(--violet);
     font-size: 18;
-    background-color: #ffffff;
+    background-color:var(--main-background-color);
     padding:2rem 5rem; 
-    border: 0.1rem #7875FE solid;
+    border: 0.1rem var(--violet) solid;
      justify-content: center; 
      align-items: center; gap: 6rem; 
      display: inline-flex;
 
-    
-
 }
+
+button{ display:none; }
