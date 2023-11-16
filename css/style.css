@@ -12,6 +12,9 @@
     word-wrap: break-word;
     font-size: 62.5%;
 }
+*{
+    box-sizing: border-box;
+}
 p{
     color: var(--text-color);
     font-size:1.6rem;
@@ -28,6 +31,15 @@ a
 {
     text-decoration: none;
     
+}
+footer{
+    justify-content: space-between; /* или другие значения в зависимости от макета */
+    align-items: center;
+}
+header
+{
+    justify-content: space-between; /* или другие значения в зависимости от макета */
+    align-items: center;
 }
 .maintheme {
     margin-left: 0;
@@ -87,6 +99,7 @@ a
 .down {
     background-color:var(--down);
     padding-top:0.3rem ;
+
 }
 .sec3pad {
     padding:6rem 0rem;
