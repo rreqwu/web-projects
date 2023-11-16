@@ -24,6 +24,11 @@ button{
 img{
     padding:0 1.6rem ;
 }
+a
+{
+    text-decoration: none;
+    
+}
 .maintheme {
     margin-left: 0;
     margin-right: 0;
@@ -89,6 +94,13 @@ img{
 .pcenter {
     text-align-last: center;
 }
+.more
+{
+    color: var(--violet);
+    font-size:2rem;
+    
+}
+
 #id_logo {
     text-align-last: center;
     padding-top: 1.05rem ;
