@@ -12,6 +12,7 @@
     font-weight: 400;
     word-wrap: break-word;
     font-size: 62.5%;
+    
 }
 html {
     box-sizing: border-box;
@@ -21,19 +22,25 @@ html {
 }
 p{
     color: var(--text-color);
-    font-size:1.6rem;
+    font-size: calc(1.6rem + 1vw);
     padding-left: 1.5rem ;
+    max-width: 80%;
 }
 button{
     border:none;
     background-color: transparent;
+    max-width: 40%;
+    
 }
 img{
     padding:0 1.5rem ;
+    max-width: 100%;
 }
 a{
     text-decoration: none;
+   
 }
+
 footer{
     justify-content: space-between;
    /* или другие значения в зависимости от макета */
@@ -44,10 +51,11 @@ header{
    /* или другие значения в зависимости от макета */
     align-items: center;
 }
+
 .wrapper {
     display: grid; 
     justify-items: center;
-    max-width: 1170px;
+    max-width: 117rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -59,45 +67,49 @@ header{
 }
 .zag1{
     color:var(--dark-blue);
-    font-size:3rem;
+    font-size:calc(3rem + 1vw);
     font-weight: 400;
     line-height: 3rem;
     padding:0 1.6rem ;
+    max-width: 70%;
 }
 .zag2 {
     color: var(--true-grey);
-    font-size:2.4rem;
+    font-size:calc(2.4rem + 1vw);
     font-weight: 400;
     line-height: 2.4rem;
     padding:0 1.6rem ;
+    max-width: 100%;
 }
 .lil {
     color: var(--text-lil-color);
-    font-size:1.4rem;
+    font-size:calc(1.4rem + 1vw);
     padding:0 1.6rem ;
 }
 .back {
     background-color:var(--grey);
+    background-size: cover;
     display:flex;
     flex-flow: column nowrap;
 }
 .vst {
     color: var(--true-grey);
-    font-size:1.6rem;
+    font-size:calc( 1.6rem + 1vw);
     font-weight: 500;
 }
 .end {
     color: var(--dark-blue);
-    font-size:1.3rem;
+    font-size:calc(1.3rem + 1vw);
     text-align:center;
 }
 .back1 {
     background-color:var(--dark-blue);
+    background-size: cover;
     padding:2rem 0;
 }
 .butbord {
     color:var(--violet);
-    font-size: 1.8rem;
+    font-size: calc(1.8rem + 1vw);
     background-color:var(--main-background-color);
     padding:2rem 5rem ;
     margin-left:1.5rem;
@@ -111,6 +123,7 @@ header{
 .down {
     background-color:var(--down);
     padding-top:0.3rem ;
+    max-width: 100%;
 }
 .sec3pad {
     margin:4rem 0rem 6rem 0rem;
@@ -120,7 +133,7 @@ header{
 }
 .more {
     color: var(--violet);
-    font-size:2rem;
+    font-size:calc(2rem + 1vw);
 }
 .more img {
     padding: 0 0 0 0.5rem;
@@ -134,14 +147,16 @@ header{
     margin-bottom: 2rem;
 }
 .karusel{
-    background-color:var(--grey);
+    background-color:var(--grey) ;
+    background-size:auto;
     display:flex;
     flex-flow: row nowrap;
+ 
     
 }
 .karuselbord{
-    color:var(--violet);
-    font-size: 1.8rem;
+    /* color:var(--violet); */
+    font-size:clac(1.8rem + 1vw) ;
     background-color:var(--main-background-color);
     padding:2.01rem 1.71rem 2.73rem 1.71rem ;
     margin-top:6rem;
@@ -154,31 +169,48 @@ header{
     display: inline-flex;
 }
 
-/*графики для grid*/
+/*для grid*/
 
 .conteiner{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:1rem ;
-    max-width: 1170px;
+    max-width: 117rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 16px;
+    padding-left:1.6rem ;
+    padding-right:1.6rem ;
+    margin-top:1.6rem ;
+
     
 
 }
-.box
+.box img
 {
+   
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    max-width: 100%;
+    padding: 0 ;
     background-color: var(--down);
     
 }
-.dashbord{
-
+.dashbord {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: center;
     background-color:var(--dark-blue);
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+   
+}
+.dashbord p{
+    padding: 0;
+    background-color:var(--down);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 .a{
     grid-column: 2/5;
@@ -206,7 +238,8 @@ header{
 .lil_conteiner{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:1rem;
+    column-gap: 1rem;
+
 }
 .f{
     grid-column:2/5;
@@ -221,6 +254,39 @@ header{
     grid-row: 3 ;
 }
 
+.gallery {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.gallery .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery .image-container a {
+
+    position: absolute;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0.1rem solid black;
+    border-radius: 5rem;
+    text-decoration: none;
+    color: black;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+}
 
 #id_up{
     text-align: center;
@@ -253,4 +319,18 @@ header{
 #id_logodown {
     text-align: center;
     margin-bottom: 4.1rem;
+}
+@media screen and (min-widht:768px) {
+    .conteiner{
+        max-width: 25%;
+        float: left;
+    }
+    
+}
+@media screen and (min-widht:1024px) {
+    .conteiner{
+        width: 25%;
+        float: left;
+    }
+    
 }
