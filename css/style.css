@@ -12,6 +12,7 @@
     font-weight: 400;
     word-wrap: break-word;
     font-size: 62.5%;
+    margin: 0;
     
 }
 html {
@@ -24,17 +25,18 @@ p{
     color: var(--text-color);
     font-size: calc(1.6rem + 1vw);
     padding-left: 1.5rem ;
-    max-width: 80%;
-}
+    max-width: 90%;
+
+} 
 button{
     border:none;
     background-color: transparent;
-    max-width: 40%;
+    max-width: 90%;
     
 }
 img{
     padding:0 1.5rem ;
-    max-width: 100%;
+    max-width: 100%; 
 }
 a{
     text-decoration: none;
@@ -50,21 +52,21 @@ header{
     justify-content: space-between;
    /* или другие значения в зависимости от макета */
     align-items: center;
+    
 }
 
 .wrapper {
     display: grid; 
-    justify-items: center;
+    place-items: center;
     max-width: 117rem;
     margin-left: auto;
     margin-right: auto;
+    grid-auto-flow: dense;
+    /* justify-content: center; */
 
 
 }
-.maintheme {
-    margin-left: 0;
-    margin-right: 0;
-}
+
 .zag1{
     color:var(--dark-blue);
     font-size:calc(3rem + 1vw);
@@ -86,11 +88,71 @@ header{
     font-size:calc(1.4rem + 1vw);
     padding:0 1.6rem ;
 }
+.card {
+    
+    display:grid;
+    /* align-items: center; */
+   
+    grid-template-areas:"card1 "
+                        "card2"
+                        "card3";
+
+
+}
+
+.crd1 p{
+    margin:0;
+
+}
+.crd1{
+    margin-top:8rem;
+    margin-bottom:2rem;
+    grid-area: card1;
+}
+.crd2 p{
+    margin:0;
+
+}
+.crd2{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    grid-area: card2;
+}
+.crd3 p{
+    margin:0;
+
+}
+.crd3{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    grid-area: card3;
+}
+.leftfoto{
+    
+    float:left;
+    margin: 0 1.4rem 0.2rem 0;
+}
+
+.products
+{
+    margin: 0;
+    display: grid;
+    gap:3rem
+}
+.head{
+    display:flex;
+    align-self: grid-start;
+    max-width: 117rem;
+    margin-bottom: 0;
+}
 .back {
     background-color:var(--grey);
     background-size: cover;
-    display:flex;
-    flex-flow: column nowrap;
+   
+    /* grid-gap: ; */
+    /* grid-auto-flow: dense;
+    grid-template-columns: 1fr auto auto;
+    grid-area: ; */
 }
 .vst {
     color: var(--true-grey);
@@ -107,6 +169,9 @@ header{
     background-size: cover;
     padding:2rem 0;
 }
+.back1 img{
+    padding:0;
+}
 .butbord {
     color:var(--violet);
     font-size: calc(1.8rem + 1vw);
@@ -118,7 +183,9 @@ header{
     align-items: center;
     gap: 6rem;
     display: inline-flex;
-    box-shadow:0.7rem 0.7rem rgba(0,0,0,0.5);
+    /* box-shadow:0.7rem 0.7rem rgba(0,0,0,0.5); */
+    margin-bottom: 4.9rem ;
+    
 }
 .down {
     background-color:var(--down);
@@ -127,6 +194,18 @@ header{
 }
 .sec3pad {
     margin:4rem 0rem 6rem 0rem;
+
+}
+.special1{
+    margin-top: 6rem;
+
+}
+.seck{
+    grid-area: kartinka;
+}
+.seckt{
+    grid-area: text;
+
 }
 .pcenter {
     text-align: center;
@@ -138,107 +217,133 @@ header{
 .more img {
     padding: 0 0 0 0.5rem;
 }
-.leftfoto{
-    float:left;
-    margin: 0 1.4rem 0.2rem 0;
-}
-.vphoto{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+
 .karusel{
     background-color:var(--grey) ;
     background-size:auto;
     display:flex;
     flex-flow: row nowrap;
+    justify-self:stretch ;
  
     
 }
 .karuselbord{
-    /* color:var(--violet); */
-    font-size:clac(1.8rem + 1vw) ;
+    font-size:calc(1.8rem + 1vw) ;
     background-color:var(--main-background-color);
     padding:2.01rem 1.71rem 2.73rem 1.71rem ;
     margin-top:6rem;
     margin-bottom:6rem;
     margin-left: 1.5rem;
-    border: 0.1rem var(--kar) solid;
+    border: 0.25rem #b0b2b7 solid;
     justify-content: center;
     align-items: center;
     gap: 6rem;
     display: inline-flex;
 }
+.head_under{
+    margin-top:4.9rem;
+    
+}
+.tube{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*для grid*/
 
 .conteiner{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:"panel other";
+    /* grid-template-rows: repeat(auto-fit,1fr); */
     gap:1rem ;
     max-width: 117rem;
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     padding-left:1.6rem ;
     padding-right:1.6rem ;
     margin-top:1.6rem ;
+    max-width: 80%; */
 
     
 
 }
 .box img
-{
+{   
+    grid-area: other;
    
-    height: auto;
-    object-fit: cover;
-    display: flex;
-    max-width: 100%;
     padding: 0 ;
     background-color: var(--down);
     
+    
+}
+.korobka
+{
+    display: grid;
+    grid-template-areas:"item-1 item-1 item-1 item-1 item-1 item-1"
+                        "item-2 item-2 item-3 item-3 item-4 item-4"
+                        "item-5 item-5 item-5 item-6 item-6 item-6";
+
+
 }
 .dashbord {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: stretch;
-    align-items: center;
+   
     background-color:var(--dark-blue);
     border-radius: 0.5rem;
-    padding: 0.2rem;
+    /* padding: 0.2rem; */
    
 }
 .dashbord p{
-    padding: 0;
+    /* max-width: 80%; */
+    /* padding: 0;
     background-color:var(--down);
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.5rem; */
 }
-.a{
-    grid-column: 2/5;
-    grid-row: 1;
-    align-content: center;
+.it1{
+    grid-area: item-1;
+    
 }
-.b{
-    grid-column: 1 ;
-    grid-row: 1 / 4;
+.it2{
+    grid-area: item-2;
 }
-.c {
-    grid-column: 2 ;
-    grid-row: 2 ;
+.it3{
+    grid-area: item-3;
 }
-.d{
-    grid-column: 3;
-    grid-row: 2;
+.it4{
+    grid-area: item-4;
 
 }
-.e{
-    grid-column: 4;
-    grid-row: 2;
+.it5{
+    grid-area: item-5;
+}
+.it6{
+    grid-area: item-6;
 }
 
 .lil_conteiner{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
+    column-gap: 1rem; */
 
 }
 .f{
@@ -278,7 +383,7 @@ header{
     text-align: center;
     padding: 1rem 2rem;
     background-color: rgba(255, 255, 255, 0.5);
-    border: 0.1rem solid black;
+    border: 0.2 rem solid #6F7072;
     border-radius: 5rem;
     text-decoration: none;
     color: black;
@@ -292,17 +397,14 @@ header{
     text-align: center;
     margin-bottom: 2.7rem;
     margin-top: 1.05rem;
+    align-self: grid-start;
 }
-#id_head_under{
-    margin-top: 12.1rem;
-    margin-bottom: 4.9rem ;
-}
-#id_head{
-    display:flex;
-    justify-content:space-between;
-}
+
+
 #id_social{
     display:flex;
+    justify-content: center;
+    gap: 3rem;
     justify-content:center;
     
 }
@@ -312,25 +414,228 @@ header{
    margin-left: auto;
 }
 
-#id_sec2p {
-    margin-top: 8rem;
-    word-wrap: break-wor;
-}
 #id_logodown {
     text-align: center;
     margin-bottom: 4.1rem;
 }
-@media screen and (min-widht:768px) {
-    .conteiner{
-        max-width: 25%;
-        float: left;
+@media screen and (min-width: 576px) {
+    .wrapper {
+        
+    }
+    img{
+        max-width:100%;
+    }
+    button{
+        max-width: 50%;
+    }
+    /* голова */
+    .sick{
+        display: none;
+    }
+    .golova{
+        /* max-width: 100%; */
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows: 4.4rem;
+        /* grid-template-areas: "logotip seti"
+                             "shapka shapka"; */
+        margin-top: 1rem;
     }
     
+    #id_up{
+        margin: 0;
+        grid-column:1;
+        grid-row: 1;
+        justify-self: start;
+    
+    }
+    .head{
+        grid-column:2;
+        grid-row: 1;
+
+    }
+    .menu{
+        word-wrap:initial;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 5.9rem;
+        justify-content:stretch;
+        justify-items: stretch;
+    
+    }
+    .prod{
+        grid-column: 1;
+
+    }
+    .mat{
+        grid-column: 2;
+
+    }
+    .mi
+    {
+        justify-self: stretch;
+        grid-column: 3;
+
+    }
+    .contac{
+        grid-column: 4;
+    }
+    /* секция-1 описываем верх */
+    .head_under{
+        display: grid;
+        grid-template-areas: "zag tub"
+                            "text tub"
+                            "knopka tub";
+        align-items: end;
+        justify-items: stretch;          
+        
+    } 
+    .tube{
+        display: block;
+        grid-area: tub;
+
+    }   
+    .z
+    {
+        grid-area: zag;
+    }
+    .knopka
+    {
+        grid-area: knopka;
+    }
+    .txt
+    {
+        grid-area: text;
+    }
+    /* секция-2 серая штука */
+    .card {
+        margin-bottom: 4rem;
+        grid-template-areas:"card1 card2 card3";
+
+    }
+
+    .crd2
+    {
+        margin-top: 8rem;
+    }
+    .crd3
+    {
+        margin-top: 8rem;
+    }
+    .leftfoto
+    {
+        float: none;
+        
+    }
+    /* секция-3 товары на белом фоне */
+    .products{
+       margin-top: 6rem;
+       margin-bottom: 6rem;
+       justify-content: center;
+        grid-template-areas: "cart1 cart2"
+                             "cart3 cart4";
+    }
+    .carta1{
+        grid-area: cart1;
+        
+        place-items: center end;
+      
+        
+    }
+    .carta2{
+        grid-area: cart2;
+        place-items: center end;
+       
+       
+    }
+    .carta3{
+        grid-area: cart3;
+        place-items: center end;
+        
+    }
+    .carta4{
+        grid-area: cart4;
+        place-items: center end;
+        
+    }
+    .sec3pad {
+        margin:0;
+    }
+    .otstup1
+    {
+        margin-top: 8rem;
+    }
+    .otstup2
+    {
+        margin-top: 7.3rem;
+    }
+    .special1
+    {
+        margin: 0;
+    }
+    /* секция-4 серая карусель */
+    .hide{
+        display:flex;
+      
+    }
+    .karusel
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .karuselbord
+    {
+        margin: 1.5rem ; 
+        justify-items: center;
+        align-items: center;
+        
+
+    }
+    /* секция-5 скетчбук */
+    .sketchbook
+    {
+        margin-top: 6rem;
+    }
+    /* футер */
+    .nogi
+    {
+        display: grid;
+        grid-template-areas: "logo social";
+        /* align-items: center; */
+    }
+    .log
+    {
+        grid-area: logo;
+        justify-items: start;
+    }
+    .soc
+    {
+        grid-area: social;
+        justify-items: end;
+    }
+    #id_logodown {
+        
+        margin-bottom: 0;
+    }
+
 }
-@media screen and (min-widht:1024px) {
-    .conteiner{
-        width: 25%;
-        float: left;
+  
+@media screen and (min-width: 768px) {
+    .wrapper {
+      max-width: 720px;
     }
-    
+}
+  
+@media screen and (min-width: 992px) {
+    .wrapper {
+      max-width: 960px;
+    }
+}
+  
+@media screen and (min-width: 1200px) {
+    .wrapper {
+      max-width: 1140px;
+    }
 }
