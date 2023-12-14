@@ -224,7 +224,7 @@ header{
 
     
    display: grid;
-   grid-template-columns: repeat(auto-fill,minmax(17rem, 1fr));
+   grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr;
    padding-left: 1.5rem;
    gap: 3rem;
@@ -274,22 +274,122 @@ header{
 
 }
 .sketchbook img{
-    width: 70%;
+    /* width: 80%; */
 }
 
 .sketchtxt{
     margin-top: 0;
 }
+/* для формы */
+.page-footer {
 
+    text-align: center;
+}
+  
+.page-footer.fixed-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.stroka
+{
+    display: flex;
+    gap: 1.5rem;
+    padding-top:1rem ;
+}
+.knopka{
+    color:var(--violet);
+    font-size: calc(1.2rem + 1vw);
+    background-color:var(--main-background-color);
+    padding:1rem 1rem ;
+    margin-left:1.5rem;
+    border: 0.1rem var(--violet) solid;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    display: inline-flex;
 
+    margin-bottom: 4.9rem ;
+}
+.knop{
+    display:flex;
+    /* grid-template-columns:  1fr; */
+    gap: 1rem;
+    margin-top:2rem ;
+    margin-bottom: 1rem;
+}
+.contan{
+    padding-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.privet{
+    display: flex;
+    flex-direction: column;
+    gap:1rem
+}
+.forma{
+    /* display: grid;
+    /* grid-template-columns:  repeat(auto-fill,minmax(2rem, 1fr)); */
+   
+    
+}
+.f-1{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill,minmax(25rem, 1fr));
 
+    gap:rem;
+   
+}
+.f-2{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill,minmax(25rem, 1fr));
 
+    gap:1rem;
+}
+input{
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 0;
+    color: var(--true-grey);
+    font-size:calc( 1.1rem + 1vw);
+    
+}
 
+label{
 
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    word-wrap: break-word;
+    color: var(--dark-blue);
+    margin: 0;
+    font-size:calc( 1.2rem + 1vw);
 
+}
+legend
+{
+    font-family: Roboto,sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    word-wrap: break-word;
+    color: var(--dark-blue);
+    margin: 0;
+    font-size:calc( 1.7rem + 1vw);
+} 
+fieldset
+{
+    border: none;
+}
 
-
-
+input{
+    border: 0.1rem solid var(--true-grey); /* Измените цвет подсветки синтаксисом вашего выбора */
+}
+input:focus{ border: 2px solid var(--violet);}
 
 /*для grid*/
 
@@ -412,7 +512,7 @@ header{
         display: grid;
         grid-template-columns:1fr 1fr ;
         grid-template-rows: 4.4rem;
-        padding-left: 1.5rem;
+        padding-left: 3.2rem;
         margin-top: 1rem;
     }
     
@@ -426,6 +526,7 @@ header{
     .head{
         grid-column:2;
         grid-row: 1;
+        padding-left: 3.2rem;
 
     }
     .menu{
@@ -433,6 +534,7 @@ header{
         display:grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: 5.9rem;
+        padding-left: 3.2rem;
         justify-content:stretch;
         justify-items: stretch;
     
@@ -461,7 +563,8 @@ header{
                             "text tub"
                             "knopka tub";
         align-items: end;
-        justify-items: stretch;          
+        justify-items: stretch;  
+        padding-left: 3.2rem;        
         
     } 
     .tube{
@@ -491,6 +594,7 @@ header{
     .card {
         margin-bottom: 4rem;
         grid-template-areas:"card1 card2 card3";
+        padding-left: 3.2rem;
 
     }
 
@@ -523,6 +627,13 @@ header{
     {
         margin: 0;
     }
+    .korob{
+            padding-left: 3.2rem;
+    }
+    .products
+    {
+        padding-left: 3.2rem;
+    }
     /* секция-4 серая карусель */
     .hide{
         display:flex;
@@ -532,11 +643,12 @@ header{
     {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        padding-left: 3.2rem;
         
     }
  
     /* секция-5 скетчбук */
- 
+    .sketch{padding-left: 3.2rem;}
     /* футер */
     .nogi
     {
@@ -566,11 +678,22 @@ header{
     /* голова без изменений*/
    
     /* секция-1 описываем верх без изменений */
-    
-    /* секция-2 серая штука */
-    p{
-        /* max-width:; */
+    .golova{
+        /* max-width: 100%; */
+      
+        padding-left: 3.9rem;
+     
     }
+    .menu{
+        padding-left: 3.9rem;
+    }
+    .head_under
+    {
+        padding-left: 3.9rem;
+
+    }
+    /* секция-2 серая штука */
+   
    .korob
    {
         display: grid;
@@ -579,7 +702,7 @@ header{
         justify-content: stretch;
         align-content: center;
         margin-top: 5rem;
-        padding-left: 1.5rem;
+        padding-left: 3.9rem;
    }
    .white{
         grid-column: 1;
@@ -595,11 +718,16 @@ header{
         grid-column: 2;
         grid-row: 1;
         justify-items: stretch;
-        margin: 0;
-        
+        margin: 0; 
+   }
+   .card
+   {
+    padding-left: 3.9rem;
    }
     /* секция-3 товары на белом фоне без изменений */
-   
+    .products{
+        padding-left: 3.9rem;
+    }
     /* секция-4 серая карусель */
     .hide{
         display:flex;
@@ -609,10 +737,14 @@ header{
     {
         grid-template-rows: 1fr ;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 3.9rem;
         
     }
     /* секция-5 скетчбук */
-   
+    .sketch
+    {
+        padding-left: 3.9rem;
+    }
     /* футер */
     .nogi
     {
@@ -640,15 +772,59 @@ header{
     .wrapper {
       max-width: 960px;
     }
-    .products
+
+    /* голова без изменений*/
+   
+    /* секция-1 описываем верх без изменений */
+    .golova{
+        /* max-width: 100%; */
+      
+        padding-left: 16.5rem;
+     
+    }
+    .menu{
+        padding-left: 16.5rem;
+    }
+    .head_under
     {
-    
-    
+        padding-left: 16.5rem;
+
+    }
+    /* секция-2 серая штука */
+    p{
+        /* max-width:; */
+    }
+   .korob
+   {
+        
+        padding-left: 16.5rem;
+   }
+  
+   .card
+   {
+    padding-left: 16.5rem;
+   }
+    /* секция-3 товары на белом фоне без изменений */
+    .products{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        
-    
+        padding-left: 16.5rem;
     }
+    /* секция-4 серая карусель */
+    
+    .karusel
+    {
+        
+        padding-left: 16.5rem;
+        
+    }
+    /* секция-5 скетчбук */
+    .sketch
+    {
+        padding-left: 16.5rem;
+    }
+    /* футер */
+   
 }
   
 @media screen and (min-width: 1200px) {
