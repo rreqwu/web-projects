@@ -23,7 +23,7 @@ html {
 }
 p{
     color: var(--text-color);
-    font-size: calc(1.6rem + 1vw);
+    font-size: calc(1.6rem + 0.5vw);
     padding-left: 1.5rem ;
     max-width: 90%;
 
@@ -78,7 +78,7 @@ header{
 
 .zag1{
     color:var(--dark-blue);
-    font-size:calc(3rem + 1vw);
+    font-size:calc(3rem + 0.5vw);
     font-weight: 400;
     line-height: 3rem;
     padding:0 1.6rem ;
@@ -86,16 +86,17 @@ header{
 }
 .zag2 {
     color: var(--true-grey);
-    font-size:calc(2.4rem + 1vw);
+    font-size:calc(2.4rem + 0.5vw);
     font-weight: 400;
     line-height: 2.4rem;
     padding:0 1.6rem ;
     max-width: 90%;
+    line-height: 1.5; 
     
 }
 .lil {
     color: var(--text-lil-color);
-    font-size:calc(1.4rem + 1vw);
+    font-size:calc(1.4rem + 0.5vw);
     padding:0 1.6rem ;
 }
 .card {
@@ -113,7 +114,7 @@ header{
 .greyline{
     border-top: 0.1rem solid var(--text-lil-color);
     padding-top: 3rem;
-    margin-left: 1.2rem;
+    margin-left: 4%;
 
 
 }
@@ -158,14 +159,15 @@ header{
     margin-top: 6rem;
     padding-left: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(26rem, 1fr));
-    grid-template-row: 1fr;
+    grid-template-columns:1fr;
+  
     gap:3rem
 }
 .head{
     display:flex;
-    align-self: grid-start;
-    max-width: 117rem;
+    justify-self: stretch;
+    padding-right: 6%;
+
     margin-bottom: 0;
 }
 .back {
@@ -174,12 +176,12 @@ header{
 }
 .vst {
     color: var(--true-grey);
-    font-size:calc( 1.6rem + 1vw);
+    font-size:calc( 1.6rem + 0.5vw);
     font-weight: 500;
 }
 .end {
     color: var(--dark-blue);
-    font-size:calc(1.3rem + 1vw);
+    font-size:calc(1.3rem + 0.5vw);
     text-align:center;
 }
 .back1 {
@@ -192,7 +194,7 @@ header{
 }
 .butbord {
     color:var(--violet);
-    font-size: calc(1.8rem + 1vw);
+    font-size: calc(1.8rem + 0.5vw);
     background-color:var(--main-background-color);
     padding:2rem 5rem ;
     margin-left:1.5rem;
@@ -230,7 +232,7 @@ header{
 }
 .more {
     color: var(--violet);
-    font-size:calc(2rem + 1vw);
+    font-size:calc(2rem + 0.5vw);
 }
 .more img {
     padding: 0 0 0 0.5rem;
@@ -271,6 +273,12 @@ header{
 .tube {
     display: none;
 }
+.tube2{
+    display: none;
+}
+.tube3{
+    display: none;
+}
 .hide{
     display: none;
 }
@@ -289,9 +297,7 @@ header{
 
 
 }
-.sketchbook img{
-    /* width: 80%; */
-}
+
 
 .sketchtxt{
     margin-top: 0;
@@ -318,7 +324,7 @@ header{
 }
 .knopka{
     color:var(--violet);
-    font-size: calc(1.2rem + 1vw);
+    font-size: calc(1.2rem + 0.5vw);
     background-color:var(--main-background-color);
     padding:1rem 1rem ;
     margin-left:1.5rem;
@@ -375,7 +381,7 @@ input{
     word-wrap: break-word;
     margin: 0;
     color: var(--true-grey);
-    font-size:calc( 1.1rem + 1vw);
+    font-size:calc( 1.1rem + 0.5vw);
     
 }
 
@@ -387,7 +393,7 @@ label{
     word-wrap: break-word;
     color: var(--dark-blue);
     margin: 0;
-    font-size:calc( 1.2rem + 1vw);
+    font-size:calc( 1.2rem + 0.5vw);
 
 }
 legend
@@ -398,7 +404,7 @@ legend
     word-wrap: break-word;
     color: var(--dark-blue);
     margin: 0;
-    font-size:calc( 1.7rem + 1vw);
+    font-size:calc( 1.7rem + 0.5vw);
 } 
 option{
     font-family: Roboto,sans-serif;
@@ -407,7 +413,7 @@ option{
     word-wrap: break-word;
     color: var(--dark-blue);
     margin: 0;
-    font-size:calc( 1.2rem + 1vw);
+    font-size:calc( 1.2rem + 0.5vw);
     
 }
 fieldset
@@ -502,6 +508,7 @@ input:focus{ border: 2px solid var(--violet);}
     margin-bottom: 2.7rem;
     margin-top: 1.05rem;
     align-self: grid-start;
+    padding-left: 6%;
 }
 
 
@@ -526,6 +533,7 @@ input:focus{ border: 2px solid var(--violet);}
     .wrapper {
         
     }
+    
     .stgrey2{
         border-top: 0.1rem solid var(--text-lil-color);
         border-bottom: 0.1rem solid var(--text-lil-color);
@@ -543,13 +551,16 @@ input:focus{ border: 2px solid var(--violet);}
         display: none;
     }
     .golova{
-        /* max-width: 100%; */
+        max-width: 100%;
         display: grid;
         grid-template-columns:1fr 1fr ;
-        grid-template-rows: 4.4rem;
-        padding-left: 4%;
+        grid-template-rows: 1fr 1fr;
+        
+        /* margin: ;-left: 4%; */
         margin-top: 1rem;
     }
+    
+       
     .stgrey{
         border:none;
         
@@ -559,12 +570,15 @@ input:focus{ border: 2px solid var(--violet);}
         grid-column:1;
         grid-row: 1;
         justify-self: start;
-    
+        align-self: center;
     }
+    
+    
     .head{
         grid-column:2;
         grid-row: 1;
         padding-left: 4%;
+        
 
     }
     .menu{
@@ -573,33 +587,37 @@ input:focus{ border: 2px solid var(--violet);}
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: 5.9rem;
         padding-left: 3.2rem;
-        justify-content:stretch;
-        justify-items: stretch;
+        justify-items:stretch;
+        grid-column: 1/3;
+        /* align-self:center; */
     
     }
     .prod{
         grid-column: 1;
+        align-self: center;
 
     }
     .mat{
         grid-column: 2;
+        align-self: center;
 
     }
+    
     .mi
     {
+        align-self: center;
         justify-self: stretch;
         grid-column: 3;
 
     }
     .contac{
         grid-column: 4;
+        align-self: center;
     }
     /* секция-1 описываем верх */
     .head_under{
         display: grid;
-        grid-template-areas: "zag tub"
-                            "text tub"
-                            "knopka tub";
+        grid-template-areas:"text tub";
         align-items: end;
         justify-items: stretch;  
         padding-left: 4%;      
@@ -616,6 +634,7 @@ input:focus{ border: 2px solid var(--violet);}
     .tube{
         display: block;
         grid-area: tub;
+        align-self: stretch;
         
 
     }  
@@ -631,9 +650,11 @@ input:focus{ border: 2px solid var(--violet);}
     .knopka
     {
         grid-area: knopka;
+    
     }
     .txt
     {
+        align-self:center;
         grid-area: text;
     }
     /* секция-2 серая штука */
@@ -678,7 +699,15 @@ input:focus{ border: 2px solid var(--violet);}
     }
     .products
     {
-        padding-left: 4%;
+       
+       
+        grid-template-columns:1fr 1fr;
+        grid-template-row: 1fr 1fr;
+
+        padding-left:4%;
+    }
+    .products p{
+        padding-left: 0;
     }
     /* секция-4 серая карусель */
     .hide{
@@ -724,7 +753,22 @@ input:focus{ border: 2px solid var(--violet);}
     /* голова без изменений*/
    
     /* секция-1 описываем верх без изменений */
-   
+   .tube{
+    display: none;
+   }
+
+   .tube2{
+        display: block;
+        grid-area: tub;
+        align-self: stretch;
+    
+
+    }  
+    .tube2 img{
+        display: block;
+        object-fit: fill;
+
+    }
     /* секция-2 серая штука */
    
    .korob
@@ -734,8 +778,7 @@ input:focus{ border: 2px solid var(--violet);}
         grid-template-rows: 1fr;
         justify-content: stretch;
         align-content: center;
-        margin-top: 5rem;
-        
+        margin-top: 5rem;    
    }
    .white{
         grid-column: 1;
@@ -753,7 +796,7 @@ input:focus{ border: 2px solid var(--violet);}
         justify-items: stretch;
         margin: 0; 
    }
-   
+  
     /* секция-4 серая карусель */
     .hide{
         display:flex;
@@ -794,15 +837,84 @@ input:focus{ border: 2px solid var(--violet);}
     .wrapper {
       max-width: 960px;
     }
-
+    img{
+        max-width:100%;
+    }
+    button{
+        max-width: 50%;
+    }
+   
     /* голова без изменений*/
-   
+    .golova{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+
+    }
+    .menu{
+        grid-column: 2/3;
+        padding-left: 0;
+        align-items:center;
+        justify-items: stretch;
+    }
+    #id_up{
+        grid-column: 1/2;
+        justify-self:center;
+    }
+    .head{
+        grid-column: 3/4;
+        justify-self:center;
+    }
+    .mi{
+        
+        
+    }
+    .stgrey2{
+        border-top: 0rem solid var(--text-lil-color);
+        border-bottom: 0rem solid var(--text-lil-color);
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .stgrey3{
+       
+        border-bottom: 0.1rem solid var(--text-lil-color);
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+
+    }
+    .head_under{
+        margin-top: 0;
+    }
     /* секция-1 описываем верх без изменений */
-   
+    .tube2{
+        display: none;
+    }
+    
+    .tube3{
+        display: block;
+        grid-area: tub;
+        margin-top: 10rem;
+        align-self: stretch;
+        
+    
+    }  
+    .tube3 img{
+        display: block;
+        object-fit: fill;
+    
+    }
     /* секция-2 серая штука */
        
     /* секция-3 товары на белом фоне без изменений */
-   
+  
+    .products
+    {
+       
+       
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-row: 1fr;
+
+        padding-left:4%;
+    }
     /* секция-4 серая карусель */
     
   
