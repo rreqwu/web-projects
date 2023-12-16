@@ -1,180 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home page</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 
+</head>
 
-    </head>
-    <body >
+<body>
 
-        <header class="tired">
-            <div class="golova ">
-              <p id="id_up"><img src="img/src_up.svg" width="auto" alt=""> </p>
-            
-              <div class="head stgrey ">
-                <button id="id_list" class="sick"><img src="img/src_list.svg" alt="" height="24"></button>
-                <button id="id_search"><img src="img/src_search.svg" alt="" width="auto" =""></button>
-                <button id="id_log-in" onclick="window.location.href = 'form.html'"><img src="img/src_log_in.svg" alt=" " width="auto" ></button>
+  <header class="tired">
+    <div class="golova stgrey3 ">
+      <p id="id_up"><a href=""><img src="img/src_up.svg" width="auto" alt=""></a> </p>
+
+      <div class="head stgrey ">
+        <button id="id_list" class="sick"><img src="img/src_list.svg" alt="" height="24"></button>
+        <button id="id_search"><img src="img/src_search.svg" alt="" width="auto"=""></button>
+        <button id="id_log-in" onclick="window.location.href = 'form.html'"><img src="img/src_log_in.svg" alt=" " width="auto"></button>
+      </div>
+
+      <div class="menu stgrey2">
+        <div>
+          <a href="" class="prod">
+            <p>Продукция</p>
+          </a>
+
+        </div>
+
+        <div>
+          <a href="" class="mat">
+            <p>Материалы</p>
+          </a>
+
+        </div>
+
+        <div>
+          <a href="" class="mi">
+            <p>О нас</p>
+          </a>
+
+        </div>
+
+        <div>
+          <a href="" class="contac">
+            <p>Контакты</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h2 class="zag2">Форма регистрации нового пользователя</h2>
+
+    <div class="forma">
+      <form action="//httpbin.org/post" method="post">
+        <fieldset class="privet f-1">
+          <legend>Личная информация:</legend>
+          <div>
+            <label for="name">Имя<span>*</span></label>
+            <input type="text" id="name" name="name" required placeholder="Василий Пупкин">
+
+          </div>
+
+          <div>
+            <label for="dob">Дата рождения<span>*</span></label>
+            <input type="date" id="dob" name="dob" required>
+
+          </div>
+
+          <div>
+            <label for="gender">Пол</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Мужской</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Женский</label>
+            <input type="radio" id="bimale" name="gender" value="female">
+            <label for="bimale">Средний</label>
+
+          </div>
+          <div>
+            <label for="password">Пароль<span>*</span></label>
+            <input type="password" id="password" name="password" required>
+
+          </div>
+          <div>
+            <label for="email">Email<span>*</span></label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+          </div>
+
+        </fieldset>
+
+        <fieldset class="f-2">
+          <legend>Контактные данные:</legend>
+          <div class="contan">
+            <div>
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1234567890">
+            </div>
+
+          </div>
+          <div>
+            <label for="contact">Удобный интервал для связи</label>
+            <div class="stroka">
+              <div>
+                <select name="day part" multiple>
+                  <option value="Morning" selected>Утро</option>
+                  <option value="Afternoon">День</option>
+                  <option value="Evening">Вечер</option>
+                  <option value="Night">Ночь</option>
+                </select>
               </div>
-              
-            </div>
-          
-            <div class="menu stgrey2"">
-              <a href="" class="prod">
-                <p >Продукция</p>
-              </a>
-              <a href="" class="mater">
-                <p >Материалы</p>
-              </a>
-              <a href="" class="mi">
-                <p >О нас</p>
-              </a>
-              <a href="" class="contac">
-                <p >Контакты</p>
-              </a>
-            </div>
-         
-        </header>
-        <main >
-            <h2 class="zag2">Форма регистрации нового пользователя</h2>
 
-       
-            <div class="forma">
-                <form action="//httpbin.org/post" method="post" >
-                    <fieldset class="privet f-1">
-                        <legend>Личная информация:</legend>
-                        <div>
-                            <label for="name">Имя<span >*</span></label>
-                            <input type="text" id="name" name="name" required placeholder="Василий Пупкин">
-        
-                        </div>
-                    
-                        <div>
-                            <label for="dob">Дата рождения<span >*</span></label>
-                            <input type="date" id="dob" name="dob" required>
-                            
-                        </div>
-                        
-                        <div>
-                            <label for="gender">Пол</label><br>
-                            <input type="radio" id="male" name="gender" value="male">
-                            <label for="male">Мужской</label>
-                            <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Женский</label>
-                        
-                            
-                        </div>
-                        <div>
-                            <label for="password">Пароль<span>*</span></label>
-                            <input type="password" id="password" name="password" required>
-        
-                        </div>
-                        <div>
-                            <label for="email">Email<span >*</span></label>
-                            <input type="email" id="email" name="email" required placeholder="example@example.com">
-                            
-                        </div>
-                    
-                    
-                    </fieldset>
-        
-                    <fieldset class="f-2">
-                        <legend>Контактные данные:</legend>
-                        <div class="contan">
-                            <div>
-                                <label for="phone">Телефон</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+1234567890">
-                            </div>
-                            
-        
-                            
-                        </div>
-                        <div>
-                            <label for="contact">Удобный интервал для связи</label>
-                            <div class="stroka">
-                                <div>
-                                    <select name="day part" multiple>
-                                        <option value="Morning" selected>Утро</option>
-                                        <option value="Afternoon">День</option>
-                                        <option value="Evening">Вечер</option>
-                                        <option value="Night">Ночь</option>
-                                      </select>
-                                </div>
-                                
-                            </div>
+            </div>
 
-                        </div>
-                        
-                    
-                    </fieldset>
-                   
-                    
-                </form>
-                <div class="knop">
-                    <button type="submit" class="knopka">Отправить</button>
-                    <button type="reset" class="knopka">Сбросить</button>
+          </div>
+
+        </fieldset>
+        <div class="knop">
+            <button type="submit" class="knopka">Отправить</button>
+            <button type="reset" class="knopka">Сбросить</button>
+    
+          </div>
+
+      </form>
+     
+    </div>
+
+    <footer>
+        <div class="fixed-bottom">
+            <div class="back1 nogi">
+                <div id="id_logodown" class="log"><img src="img/src_down.svg" alt="" height="23"> </div>
         
+                <div id="id_social" class="soc">
+        
+                  <a href="/grid.html" title=""><img src="img/src_facebook.svg" alt=""></a>
+                  <a href=""><img src="img/src_twitter.svg" alt=""></a>
+                  <a href=""><img src="img/src_inst.svg" alt=""></a>
+                  <a href=""><img src="img/src_youtube.svg" alt=""></a>
         
                 </div>
-            </div>
-            
+        
+              </div>
+        
+              <div class="pcenter">
+                <div class="down"> <img src="img/src_SIMPLE.svg" alt="" height="15"></div>
+              </div>
+        
 
+        </div>
+     
+    </footer>
 
+  </main>
 
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-            <footer>
-      
-                <div class="back1 nogi">
-                  <div id="id_logodown" class="log"><img src="img/src_down.svg" alt="" height="23"> </div>
-          
-                  <div id="id_social" class="soc">
-          
-                    <a href="/grid.html" title=""><img src="img/src_facebook.svg" alt=""></a>
-                    <a href=""><img src="img/src_twitter.svg" alt=""></a>
-                    <a href=""><img src="img/src_inst.svg" alt=""></a>
-                    <a href=""><img src="img/src_youtube.svg" alt=""></a>
-          
-          
-                  </div>
-                  
-          
-                </div>
-          
-                <div class="pcenter">
-                  <div class="down"> <img src="img/src_SIMPLE.svg" alt="" height="15"></div>
-                </div>
-          
-              </footer>
-    
-        </main>
-    
-    </body>
-  
 </html>
