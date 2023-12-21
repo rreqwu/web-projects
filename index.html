@@ -16,16 +16,25 @@
 </head>
 
 <body  >
-  <a class="skip-link" href="#main"><p >Продукция</p></a>
+  <a class="skip-link" href="#main"><p class="ski" >skip</p></a>
   <header class="tired wrapper">
    
     <div class="golova stgrey3 ">
-      <p id="id_up"><img src="img/src_up.svg" width="auto" alt="" class="foc"> </p>
+      <p id="id_up"><img src="img/src_up.svg" width="auto" alt="Simple Company" class="foc"> </p>
     
       <div class="head stgrey ">
-        <button id="id_list" class="sick foc"><img src="img/src_list.svg" alt="" height="24"></button>
-        <button id="id_search" class="foc"><img src="img/src_search.svg" alt="" width="auto" =""></button>
-        <button id="id_log-in" class="foc" onclick="window.location.href = 'form.html'"><img src="img/src_log_in.svg" alt=" " width="auto" ></button>
+        <button id="id_list" class="sick foc">
+          <span class="sr-only">Меню список</span>
+          <img src="img/src_list.svg" alt="меню" height="24">
+        </button>
+        <button id="id_search" class="foc">
+          <span class="sr-only">Поиск по сайту</span>
+          <img src="img/src_search.svg" alt="поиск" width="auto">
+        </button>
+        <button id="id_log-in" class="foc" onclick="window.location.href = 'form.html'">
+          <span class="sr-only">регистрация на сайте</span>
+          <img src="img/src_log_in.svg" alt="регистрация на сайте" width="auto" >
+        </button>
       </div>
       
     
@@ -75,9 +84,9 @@
           <button class="butbord foc"> КАТАЛОГ</button>
         </div>
         
-        <div class="tube"><img src="img/src_tube.png" alt="" height="auto"></div>
-        <div class="tube2"><img src="img/src_tube-2.png" alt="" height="auto"></div>
-        <div class="tube3"><img src="img/src_tube-3.png" alt="" height="auto"></div>
+        <div class="tube"><img src="img/src_tube.png" alt="тубус" height="auto"></div>
+        <div class="tube2"><img src="img/src_tube-2.png" alt="тубус" height="auto"></div>
+        <div class="tube3"><img src="img/src_tube-3.png" alt="тубус" height="auto"></div>
         
         
 
@@ -87,7 +96,7 @@
         <div class="card">
          
           <div class="crd1  greyline">
-            <img src="img/src_three_cards.png" alt="" width="130" class="leftfoto" >
+            <img src="img/src_three_cards.png" alt="три белые карточки" width="130" class="leftfoto" >
           
             <p >
               <span class="vst">V.1 </span><br>Результат
@@ -99,7 +108,7 @@
         
         
           <div class="crd2  greyline">
-            <img src="img/src_two_cards.png" alt="" width="130" class="leftfoto">
+            <img src="img/src_two_cards.png" alt="две карточки" width="130" class="leftfoto">
 
             <p >
               <span class="vst">V.2</span><br>
@@ -111,7 +120,7 @@
         
          
           <div class="crd3  greyline" >
-            <img src="img/src_bus_cards.png" alt="" width="130" class="leftfoto ">
+            <img src="img/src_bus_cards.png" alt="две белые карточки" width="130" class="leftfoto ">
           
             <p>
               <span class="vst">V.3 </span><br>
@@ -127,7 +136,7 @@
         
 
         <div class="sec3pad korob" >
-          <img src="img/src_folder_open.png" alt="" width="290" class="seck white">
+          <img src="img/src_folder_open.png" alt="одна белая коробка" width="290" class="seck white">
           <div class="greytext">
             <h1 class="zag2">Максимальная белизна</h1>
             <p>Для повышения белизны, гладкости
@@ -150,10 +159,10 @@
         </div>
       </section>
 
-      <section class="products wrapper" id="main">
-        <div class="">
+      <section class="products " id="main">
+        <div class="package">
           <!--<h2>Продукция</h2>-->
-          <img src="img/src_group_packing.png" alt="" height="180">
+          <img src="img/src_group_packing.png" alt="коробка, тубус, конверт" height="180">
           <h3 class="zag2">Упаковка</h3>
           <p class="lil">Тираж: от 50 штук</p>
           <p>Сделано из крафт-бумаги или
@@ -169,7 +178,7 @@
         
 
         <div class="sec3pad carta2">
-          <img src="img/src_group_packet.png" alt="" height="180">
+          <img src="img/src_group_packet.png" alt="белый пакет" height="180">
           <h3 class="zag2">Пакеты</h3>
           <p class="lil ">Тираж: от 200 штук</p>
           <p>С прямоугольным дном. От 10 см
@@ -182,7 +191,7 @@
           </a>
         </div>
         <div class="carta3">
-          <img src="img/src_case.webp" alt="" height="180">
+          <img src="img/src_case.webp" alt="серый кейс" height="180">
           <h3 class="zag2">Кейсы</h3>
           <p class="lil">Тираж: от 30 штук</p>
           <p>Подойдет для документов и других
@@ -198,7 +207,7 @@
         
 
         <div class="sec3pad carta4">
-          <img src="img/src_others.webp" alt="" height="180">
+          <img src="img/src_others.webp" alt="холсты" height="180">
           <h3 class="zag2">Другие изделия </h3>
           <p class="lil">Тираж: от 100 штук</p>
           <p>Нестандартные упаковки, кейсы
@@ -215,16 +224,16 @@
 
       <section class="karusel wrapper">
         <div class="karuselbord">
-          <img src="img/src_kar_1.svg" alt="" width="116">
+          <img src="img/src_kar_1.svg" alt="Hanhnemuhle" width="116">
         </div>
         <div class="karuselbord">
-          <img src="img/src_kar_2.svg" alt="" width="116">
+          <img src="img/src_kar_2.svg" alt="Canson" width="116">
         </div>
         <div class="karuselbord hide new">
-          <img src="img/src_kar_3.svg" alt="" width="116">
+          <img src="img/src_kar_3.svg" alt="Royal talens" width="116">
         </div>
         <div class="karuselbord  hide new">
-          <img src="img/src_kar_fabriano.svg" alt="" width="116">
+          <img src="img/src_kar_fabriano.svg" alt="Fabriano" width="116">
         </div>
 
         <!--Карусель с лого-->
@@ -233,7 +242,7 @@
 
       <section class="sketch wrapper">
 
-        <img  src="img/src_sketchbook.png" alt=""  height ="auto" class="sketchbook ">
+        <img  src="img/src_sketchbook.png" alt="Скетчбук открытый"  height ="auto" class="sketchbook ">
         
         <div >
           <h4 class="zag2 sketchtxt">Simple скетчбук</h4>
@@ -255,18 +264,30 @@
     <footer>
       
       <div class="back1 nogi wrapper">
-        <div id="id_logodown" class="log"><img src="img/src_down.svg" alt="" height="23"> </div>
+        <div id="id_logodown" class="log"><img src="img/src_down.svg" alt="SIMPLE company" height="23"> </div>
 
         <div id="id_social" class="soc">
 
-          <a href="/grid.html" title=""><img  class="foc" src="img/src_facebook.svg" alt=""></a>
-          <a href="/grid.html"><img  class="foc" src="img/src_twitter.svg" alt=""  ></a>
-          <a href="#"><img src="img/src_inst.svg" alt=""  class="foc"></a>
-          <a href="#"><img src="img/src_youtube.svg" alt=""  class="foc"></a>
+          <a href="/grid.html" title="">
+            <span class="sr-only">Переход на фейсбук</span>
+            <img  class="foc" src="img/src_facebook.svg" alt="Фейсбук">
+          </a>
+          <a href="/grid.html">
+            <span class="sr-only">Преход на твиттер</span>
+            <img  class="foc" src="img/src_twitter.svg" alt="твиттер"  >
+          </a>
+          <a href="#">
+            <span class="sr-only">Переход в инстаграм</span>
+            <img src="img/src_inst.svg" alt="инстаграм"  class="foc">
+          </a>
+          <a href="#">
+            <span class="sr-only">Переход на ютуб</span>
+            <img src="img/src_youtube.svg" alt="ютуб"  class="foc">
+          </a>
 
           <div class="you">
             <div class="load"></div>
-            <img class="aew" src="img/src_youtube.svg" alt="" >
+            <img class="aew" src="img/src_youtube.svg" alt="ютуб" >
             
           </div>
           
@@ -279,7 +300,7 @@
       </div>
 
       <div class="pcenter">
-        <div class="down"> <img src="img/src_SIMPLE.svg" alt="" height="15"></div>
+        <div class="down"> <img src="img/src_SIMPLE.svg" alt="логотип и год" height="15"></div>
       </div>
 
     </footer>
