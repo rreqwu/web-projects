@@ -51,7 +51,8 @@ header{
 }
 .wrapper {
     
-    max-width:576px;
+    max-width:1440px;
+    margin-inline: auto;
     
    /* justify-content: center;
     */
@@ -506,6 +507,13 @@ input:focus{
 
 
 /* анимация */
+
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 @keyframes fadeOut{
     0%{
         opacity:1;
@@ -530,10 +538,12 @@ input:focus{
         opacity:1;
     }
 }
+/* выделение меняем */
 ::selection{
     background-color:var(--violet);
     color:var(--grey);
 }
+/* делаем загрузку и появление */
 .load{
     border: 0.6rem solid var(--down);
     border-top: 0.6rem solid var(--violet);
@@ -555,9 +565,9 @@ input:focus{
 
 
 @media screen and (min-width: 576px) {
-    .wrapper {
+    /* .wrapper {
         max-width:768px;
-   }
+   } */
     .stgrey2{
         border-top: 0.1rem solid var(--text-lil-color);
         border-bottom: 0.1rem solid var(--text-lil-color);
@@ -731,9 +741,9 @@ input:focus{
 }
 @media screen and (min-width: 768px) {
    /* голова без изменений*/
-   .wrapper {
+   /* .wrapper {
         max: width 992px;
-    }
+    } */
    /* секция-1 описываем верх без изменений */
     .tube{
         display: none;
@@ -806,9 +816,9 @@ input:focus{
    }
 }
 @media screen and (min-width: 992px) {
-    .wrapper {
+    /* .wrapper {
         max-width: 1440px;
-   }
+   } */
     img{
         max-width:90%;
    }
@@ -881,7 +891,7 @@ input:focus{
    /* футер */
 }
 @media screen and (min-width: 1200px) {
-    .wrapper {
+    /* .wrapper {
         max-width: 2560px;
-   }
+   } */
 }
