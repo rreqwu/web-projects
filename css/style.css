@@ -3,7 +3,7 @@
     --text-lil-color:#74748f;
     --main-background-color: "#FFFFFF";
     --dark-blue:#4C5866;
-    --violet:#7875FE;
+    --violet:#605ede;
     --grey:#EBEBEB;
     --true-grey:#666666;
     --down:#DDDDDD;
@@ -166,17 +166,19 @@ header{
     padding:0;
 }
 .butbord {
+    
     color:var(--violet);
     font-size: calc(1.8rem + 0.5vw);
     background-color:var(--main-background-color);
     padding:2rem 5rem ;
     margin-left:1.5rem;
-    border: 0.1rem var(--violet) solid;
+    border: 0.2rem var(--violet) solid;
     justify-content: center;
     align-items: center;
     gap: 6rem;
     display: inline-flex;
     margin-bottom: 4.9rem ;
+    font-weight: 400;
 }
 .down {
     background-color:var(--down);
